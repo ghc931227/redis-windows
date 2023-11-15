@@ -78,7 +78,6 @@ jobs:
         if: ${{ success() }}
         uses: softprops/action-gh-release@v1
         with:
-          token: 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
           name: Redis ${{ inputs.tag_name }} for Windows
           tag_name: ${{ inputs.tag_name }}
           body_path: redis_latest_body.txt
